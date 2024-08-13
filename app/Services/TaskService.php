@@ -33,9 +33,9 @@ class TaskService
             return response()->json(['message' => 'Not found'], 404);
 
         }
-        $task = Task::findOrFail($id);
-        return new TaskResource($task);
-        // return new TaskResource($task);
+        //$task = Task::findOrFail($id);
+        //return new TaskResource($task);
+        
     }
 
     public function createTask($data)
